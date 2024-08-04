@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div id="inputID">
+                <input id="amtInput" type="number" placeholder="Enter Your Amount">
+            </div>
+            <div id="dropdown">
+                <div id="selectFro" class="selectDiv">
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                    <select id="selectFrom">
+                    </select>
+                </div>
+                <i id="logo" style="font-size: 1.3em;" class="fa-solid fa-right-left"></i>
+                <div class="selectDiv">
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                    <select id="selectTo">
+                    </select>
+                </div>
+            </div>
+            <p id="finalOutput">1 usd = 83 inr</p>
+        </form>
+    </div>
+</body>
+<script src="code.js"></script>
+<script src="logic.js"></script>
+</html>

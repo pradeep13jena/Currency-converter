@@ -1,0 +1,155 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.container{
+    margin-top: 3em;
+    padding: 2em;
+    width: 40vw;
+    border-radius: .3em;  
+}
+
+h2{
+    margin-bottom: 1.5em;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    text-align: center;
+    color: #023047;
+}
+
+form{
+    width: 100%;
+    padding: 1em;
+}
+
+#inputID, #dropdown{
+    margin-bottom: 2em;
+}
+
+#finalOutput{
+    font-family: "Gupter", serif;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    border-radius: .3em;
+    font-size: 1.3em;
+    padding: .5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+input, button{
+    width: 100%;
+    padding: .5em;
+    font-size: 1.3em;
+    border-radius: .3em;
+    
+}
+
+select{
+    width: 50%;
+    padding: .3em;
+    font-size: 1.2em;
+    border-radius: .3em;
+}
+
+#selectFro{
+    margin-bottom: .3em;
+}
+
+#dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+img{
+    width: 3.5em;
+}
+
+#logo{
+    margin-bottom: .3em;
+    font-size: x-large;
+}
+
+@media (max-width: 1200px){
+    .container{
+        /* background-color: blueviolet; */
+        margin-top: 1.5em;
+        padding: 2em;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 685px){
+    .container{
+        /* background-color: blueviolet; */
+        margin-top: 1.6em;
+        padding: 0.5em;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 405px){
+    #dropdown{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    #dropdown i {
+        align-self: center;
+    }
+
+    .selectDiv{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+        padding: .3em;
+        font-size: 1.2em;
+        border-radius: .3em;
+    }
+
+    h2{
+        margin-bottom: 1.5em;
+        font-family: "Playfair Display", serif;
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    #inputID, #dropdown{
+        margin-bottom: .6em;
+    }
+
+    #logo{
+        font-size: larger;
+    }
+
+}
